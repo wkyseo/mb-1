@@ -1,0 +1,43 @@
+@import '../../nodeColor';
+
+.node-actual.node-type-HOLD {
+  background: @node-hold;
+  .node-body{
+    border: solid 1px @node-hold-borderColor;
+    .hold {
+      width: 51px;
+      text-align: center;
+      color: #ffffff;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      top: -3px;
+     font-family: LucidaGrande;
+     font-size: 16.8px;      
+    }
+    .arrow {
+      width: 75px;
+      height: 32px;
+      object-fit: contain;
+      opacity: 0.96;
+      display: block;
+      position: absolute;
+      transform: translateY(-50%);
+    }     
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-hold;
+    }
+  }
+  .node-port-outputs{
+    margin-left: 10px;
+    .core {
+      background-color: @node-hold;
+    }
+    .show{
+      margin-left: 0;
+    }
+  }    
+}
+

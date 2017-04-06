@@ -1,0 +1,292 @@
+@import './dialog.less';
+
+.dialog-header {
+  font-size: @fontSize;
+  font-weight: @fontWeight;
+  color: @dialogTitleColor;
+
+  .dialog-title {
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    z-index: 999;
+    color: #297fca;
+    font-size: 20px;
+    .icon-bluetooth-svg {
+      float: left;
+    }
+    .bluetooth-connect-text {
+      width: 81px;
+      height: 26px;
+      font-size: 20px;
+    }
+  }
+
+  .dialog-fresh {
+    position: absolute;
+    left: 165px;
+    top: -4px;
+
+    .icon-refresh {
+      position: relative;
+      height: 38px;
+      left: -5px;
+      top: 0px;
+    }
+
+    .icon-refresh-text {
+      position: relative;
+      top: -12px;
+      left: -5px;
+      color: #297fca;
+      font-size: 20px;
+    }
+
+    .ble-device-list {
+      position: relative;
+      color: rgb(41,127,202);
+    }
+  }
+
+  .dialog-tools {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    top: -33px;
+    left: 800px;
+
+    .ble-dialog-close {
+      position: relative;
+      top: 0px;
+      left: 8px;
+      height: 18px;
+    }
+  }
+}
+
+.dialog-link-status {
+  position: absolute;
+  top: -55px;
+  left: -36px;
+  width: 885px;
+  height: 75px;
+  .disconnect-bluetooth {
+    position: relative;
+    top: 0px;
+    background: #e4f1fd;
+    width: 442px;
+    height: 75px;
+    .icon-disconnect {
+      position: relative;
+      width: 40px;
+      height: 30px;
+      font-size: 20px;
+      top: 22px;
+      left: 100px;
+    }
+    .icon-disconnect-text {
+      position: relative;
+      top: 15px;
+      left: 105px;
+      font-size: 18px;
+      color: #297fca;
+    }
+  }
+
+  .confirm-connect-ble {
+    position: relative;
+    top: -75px;
+    left: 442px;
+    background: #297fca;
+    width: 444px;
+    height: 75px;
+    .icon-ok {
+      position: relative;
+      width: 40px;
+      height: 35px;
+      font-size: 20px;
+      left: 160px;
+      top: 21px;
+    }
+    .icon-ok-text {
+      position: relative;
+      top: 10px;
+      left: 170px;
+      font-size: 18px;
+    }
+  }
+
+}
+
+.dialog-auto-connect-status {
+  position: relative;
+  top: 20px;
+  left: -36px;
+  display: block;
+  text-align: center;
+  /* width: 100%; */
+  /* font-weight: bold; */
+  font-size: 20px;
+  background: rgb(41,127,202);
+  color: white;
+  width: 885px;
+  height: 70px;
+  padding: 20px;
+  .scan-ble-list {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    top: 2px;
+    left: -6px;
+  }
+  .refresh-ble-list {
+    position: relative;
+  }
+}
+
+.dialog-link-scan-list {
+  margin: 60px;
+  color: @dialogTitleColor;
+  table {
+    border: none;
+    table-layout: fixed;
+    width: 100%;
+    overflow-y: scroll;
+    font-size: 20px;
+    tr {
+      display: block;
+    }
+    td {
+      display: inline-block;
+      width: 50%;
+      color: rgb(41,127,202);
+      background: white;
+    }
+    td:last-child {
+      text-align: right;
+    }
+    td:first-child {
+      text-align: left;
+    }
+    thead {
+      font-weight: @fontWeight;
+      display: block;
+      width: 100%;
+      background: @dialogBg;
+      color: @dialogTitleColor;
+      tr {
+        height: 60px;
+        line-height: 60px;
+      }
+    }
+    tbody {
+      display: block;
+      height: 316px;
+      width: 100%;
+      overflow-y: auto;
+      tr {
+        height: 45px;
+        line-height: 45px;
+      }
+    }
+  }
+}
+
+.dialog-link-connected {
+  background: rgb(41,127,202);
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 150px auto;
+  color: #FFF;
+  span {
+    display: table-cell;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+  }
+  .connected-text {
+    font-size: 20px;
+    vertical-align: bottom;
+    padding: 5px;
+  }
+  .connected-name {
+    font-size: 20px;
+    vertical-align: top;
+  }
+}
+.bluetooth-connect{
+  width: inherit;
+  height: inherit;
+  position: relative;
+  .dialog-link-autoconnect {
+    background: rgb(41,127,202);
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    color: #FFF;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    text-align: center;
+    span {
+      display: block;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+    }
+    .autoconnect-text {
+      font-size: @fontSize;
+      /*font-weight: @fontWeight;*/
+      vertical-align: bottom;
+    }
+  }
+}
+
+
+@-webkit-keyframes autoconnect-circle-twinkling {
+  0% {
+    right: 412px;
+    bottom: 306px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 3px solid #ccc;
+  }
+  100% {
+    right: 437px;
+    bottom: 331px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 3px solid #f00;
+  }
+}
+
+.auto-connect-less-one-meter {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 3px solid rgb(41, 127, 202);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.auto-connect-less-half-meter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 3px solid #ccc;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-animation: autoconnect-circle-twinkling 2s;
+}

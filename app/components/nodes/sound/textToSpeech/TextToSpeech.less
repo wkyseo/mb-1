@@ -1,0 +1,24 @@
+@import '../../nodeColor';
+@import '../../nodeShape';
+.node-actual.node-type-TEXTTOSPEECH {
+  .node-body {
+    .node-actual-body {
+      font-size: 24px;
+      width: 70px;
+      height: 40px;
+    }
+  }
+  .node-port-input .core {
+    border-color: @node-sound-textToSpeech;
+  }
+  .node-port-outputs{
+    .core{
+      background-color: @node-sound-textToSpeech;
+    }
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-sound-textToSpeech;
+    }
+  } 
+}

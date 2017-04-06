@@ -1,0 +1,21 @@
+@import '../../nodeColor';
+.node-actual.node-type-COLORSENSOR {
+  .node-body{
+    border: 3px solid @node-colorSensor;
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-colorSensor;
+    }
+  }
+
+  .node-port-outputs{
+    margin-left: 10px;
+    .core{
+      background-color: @node-colorSensor;
+    }
+    &.show{
+      margin-left: 0;
+    }
+  }  
+}

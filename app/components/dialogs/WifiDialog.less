@@ -1,0 +1,660 @@
+@import './dialog.less';
+@import '../nodes/nodeShape';
+.ReactModal__Content.ReactModal__Content--after-open.WifiDialog  {
+  width: 802px;
+  height: 586px;
+  border-radius: 20px;
+  padding: 0;
+  .dialog-container {
+        .dialog-header {
+          width: 800px;
+          height: 140px;
+          background: #f3f9ff;
+          border-top-right-radius: 20px;
+          border-top-left-radius: 20px;
+          .dialog-tools {
+            position: relative;
+            top: -170px;
+            .wifi-dialog-close {
+              position: relative;
+              top: 38px;
+              left: -33px;
+            }
+          }
+          .dialog-wifi-header {
+            position: relative;
+            width: inherit;
+            height: 140px;
+            border-top-left-radius: 20px;
+            text-align: center;
+            .header-first-wifi, .header-second-wifi, .header-third-wifi {
+              display: inline-block;
+              width: 80px;
+              height: 80px;
+              background: #469cff;
+             .centerY();
+              border-radius: 40px;
+              text-align: center;
+            }
+            .header-first-wifi-icon, .header-second-wifi-icon, .header-third-wifi-icon {
+              .centerY();
+              width: 37px;
+              height: auto;
+            }
+
+            .first-second-dashline, .second-third-dashline  {
+              display: inline-block;
+              width: 142px;
+              height: 6px;
+              position: relative;
+              top: 28%;
+              border: 3px dotted #469bff;
+              .first-second-realline, .second-third-realline {
+                height: 6px;
+                border: 3px solid #469bff;
+                display: none;
+                width: 50%;
+                position: absolute;
+                top: -3px;
+                left: -3px;
+
+              }
+              .first-second-disconnect, .second-third-disconnect {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: -13px;
+                margin: 0 auto;
+              }
+            }
+            
+            .connect-success {
+              border-style: solid !important;
+            }
+            .connect-fail {
+              display: block !important;
+            }
+            .connect-fail-cover {
+              border: 3px solid #cfe7ff;
+            }
+
+            .second-third-realline-cover {
+              border: 3px solid #cfe7ff;
+            }
+
+          }
+        }
+
+        .dialog-body {
+          .dialog-wifi-body-sta {
+            height: 230px;
+            .dialog-wifi-sta-body {
+              position: relative;
+              text-align: center;
+              .dialog-wifi-body-text {
+                position: relative;
+                font-size: 30px;
+                opacity: 84;
+              }
+              .dialog-wifi-sta-body-reason {
+                position: relative;
+                left: 33%;
+                top: 0px;
+                width: 260px;
+                height: 100px;
+                .reason-one {
+                  position: relative;
+                  top: 20px;
+                  left: 35px;
+                  width: 10px;
+                  height: 10px;
+                  background: black;
+                  border-radius: 5px;
+                }
+                .dialog-reason-one {
+                  position: relative;
+                  top: 1px;
+                  left: 73px;
+                  font-size: 20px;
+                }
+                .reason-second {
+                  position: relative;
+                  top: 10px;
+                  left: 35px;
+                  width: 10px;
+                  height: 10px;
+                  background: black;
+                  border-radius: 5px;
+                }
+                .dialog-reason-second {
+                  position: relative;
+                  font-size: 20px;
+                  top: -8px;
+                  left: 73px;
+                }
+                .reason-third {
+                  position: relative;
+                  top: 2px;
+                  left: 35px;
+                  width: 10px;
+                  height: 10px;
+                  background: black;
+                  border-radius: 5px;
+                }
+                .dialog-reason-third {
+                  position: relative;
+                  font-size: 20px;
+                  top: -16px;
+                  left: 25px;
+                }
+                .dialog-reason-fourth {
+                  position: relative;
+                  font-size: 20px;
+                  top: -12px;
+                  left: 85px;
+                }
+              }
+            }
+            
+            .dialog-wifi-body-downcount {
+              width: 122px;
+              height: 122px;
+              text-align: center;
+              .centerX();
+              .centerY();
+              line-height: 111px;
+              border-radius: 61px;
+              border: solid 4px #e9eced;
+              .downcount-number {
+                color: #3391ff;
+                font-size: 48px;
+              }
+            }
+            .wifi-body-reconnect {
+              position: relative;
+              width: 164px;
+              height: 46px;
+              background: #3391ff;
+              border-radius: 4px;
+              top: 80px;
+              left: 40%;
+              text-align: center;
+              .wifi-body-reconnect-text {
+                position: relative;
+                top: 7px;
+                font-size: 22px;
+              }
+            }
+            .dialog-wifi-list-div {
+              position: relative;
+              width: 640px;
+              height: 180px;
+              top: 50px;
+              margin: 0 auto;
+              overflow: scroll;
+              .dialog-wifi-list {
+                position: relative;
+                width: 800px;
+                height: 180px;
+                z-index: 99;
+                border-radius: 5px;
+                overflow-x: scroll;
+                margin: 0 auto;
+                .dialog-wifi-unit {
+                  display: inline-block;
+                
+                  height: 180px;
+                  width: 145px;
+                  font-size: 18px;
+                  margin: 3px;
+                  color: #78D7DD;
+                  float: left;
+                  margin-left: 50px;
+                  .dialog-wifi-unit-name {
+                    position: relative;
+                    .dialog-wifi-unit-name-icon {
+                      position: relative;
+                      width: 128px;
+                      height: auto;
+                    }
+
+                    .dialog-wifi-unit-name-icon-connecting {
+                      position: relative;
+                      top: -85px;
+                      left: 44px;
+                      width: 30px;
+                    }
+
+                    .dialog-wifi-unit-name-icon-suc {
+                      position: relative;
+                      top: -105px;
+                      left: 30px;
+                    }
+
+                    .dialog-wifi-unit-name-text {
+                      position: relative;
+                      top: -12px;
+                      font-size: 20px;
+                      left: 24%;
+                    }
+                  }
+                }
+              }
+            }
+            
+          }
+          .dialog-wifi-body-ap {
+            position: relative;
+            top: -20px;
+            left: -20px;
+            width: 800px;
+            height: 390px;
+            .dialog-wifi-ap-body {
+              position: relative;
+              top: 60px;
+              text-align: center;
+              font-size: 26px;
+              .dialog-wifi-body-text {
+                position: relative;
+              }
+              .dialog-wifi-ap-body-reason {
+                position: relative;
+                left: 33%;
+                top: 0px;
+                width: 260px;
+                height: 100px;
+                .reason-one {
+                  position: relative;
+                  top: 20px;
+                  left: 35px;
+                  width: 10px;
+                  height: 10px;
+                  background: black;
+                  border-radius: 5px;
+                }
+                .dialog-reason-one {
+                  position: relative;
+                  top: -4px;
+                  left: -6px;
+                  font-size: 20px;
+                }
+                .reason-second {
+                  position: relative;
+                  top: 10px;
+                  left: 35px;
+                  width: 10px;
+                  height: 10px;
+                  background: black;
+                  border-radius: 5px;
+                }
+                .dialog-reason-second {
+                  position: relative;
+                  font-size: 20px;
+                  top: -15px;
+                  left: 73px;
+                }
+                .reason-third {
+                  position: relative;
+                  top: 2px;
+                  left: 35px;
+                  width: 10px;
+                  height: 10px;
+                  background: black;
+                  border-radius: 5px;
+                }
+                .dialog-reason-third {
+                  position: relative;
+                  font-size: 20px;
+                  top: -16px;
+                  left: 25px;
+                }
+                .dialog-reason-fourth {
+                  position: relative;
+                  font-size: 20px;
+                  top: -12px;
+                  left: 85px;
+                }
+              }
+              .dialog-wifi-settings {
+                position: relative;
+                left: 30%;
+                width: 300px;
+                height: 82px;
+                .wifi-setting {
+                  position: relative;
+                  top: 25px;
+                  left: -80px;
+                }
+                .wifi-setting-text {
+                  position: relative;
+                  font-size: 18px;
+                  top: -9px;
+                  left: -25px;
+                }
+                .wifi-setting-icon {
+                  position: relative;
+                  top: -37px;
+                  left: 26px;
+                }
+                .wifi-setting-icon-text {
+                  position: relative;
+                  top: -71px;
+                  left: 73px;
+                  font-size: 18px;
+                }
+              }
+
+              .dialog-wifi-settings-icon {
+                position: relative;
+                left: 160px;
+                width: 467px;
+                height: 212px;
+                border: solid 3px #dae5ef;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                .icon-div-first {
+                  position: relative;
+                  top: -30px;
+                  left: -10px;
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 20px;
+                  border: solid 3px #dae5ef;
+                }
+                .icon-div-second {
+                  position: relative;
+                  top: -70px;
+                  left: 376px;
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 5px;
+                  border: solid 3px #dae5ef;
+                  min-width: 0;
+                }
+                .icon-div-third {
+                  position: relative;
+                  top: -25px;
+                  left: 366px;
+                  width: 10px;
+                  height: 40px;
+                  border-radius: 3px;
+                  background: #dae4ef;
+                  min-width: 0;
+                }
+                .icon-div-fourth {
+                  position: relative;
+                  top: 23px;
+                  left: -19px;
+                  width: 359px;
+                  height: 186px;
+                  border: solid 3px #dae5ef;
+                  .icon-div-fourth-hotpoint {
+                    position: relative;
+                    width: 353px;
+                  }
+                }
+              }
+
+              .dialog-wifi-ssid-input {
+                position: relative;
+                top: 25px;
+                left: 230px;
+                width: 339px;
+                height: 45px;
+                .wifi-ssid-input {
+                  position: relative;
+                  width: 339px;
+                  height: 45px;
+                  background: #ebf4ff;
+                  border-radius: 4px;
+                  border: solid 1px #318cf7;
+                  padding-left: 60px;
+                  font-size: 15px;
+                }
+
+                .div-icon-input-wifi {
+                  position: relative;
+                  top: -45px;
+                  left: 1px;
+                  width: 50px;
+                  height: 45px;
+                  border-radius: 4px;
+                  .icon-input-wifi {
+                    position: relative;
+                    top: 15%;
+                    left: 5px;
+                    font-size: 10px;
+                  }
+                }
+                
+                .div-icon-backward {
+                  position: relative;
+                  top: -90px;
+                  left: 288px;
+                  width: 50px;
+                  height: 45px;
+                  .icon-wifi-backward {
+                    position: relative;
+                    top: 20%;
+                    left: 0px;
+                    width: 14px;
+                    height: 14px;
+                    transform: rotate(-90deg);
+                  }
+                }
+                .wifi-pwd-input {
+                  position: relative;
+                  top: -91px;
+                  width: 339px;
+                  height: 45px;
+                  border-radius: 4px;
+                  border: solid 1px #318cf7;
+                  font-size: 15px;
+                  padding-left: 60px;
+                  z-index: 1;
+                }
+                .div-icon-wifi-fill {
+                  position: relative;
+                  top: -135px;
+                  left: 1px;
+                  width: 50px;
+                  height: 45px;
+                  border-radius: 4px;
+                  z-index: 1;
+                  .icon-wifi-fill {
+                    position: relative;
+                    top: 6px;
+                    left: 4px;
+                    font-size: 10px;
+                  }
+                }
+              }
+
+              .dialog-query-wifilist-div {
+                position: relative;
+                margin: 1px auto;
+                left: -1px;
+                top: 24px;
+                margin-left: 0 auto;
+                width: 339px;
+                height: 110px;
+                border-radius: 4px;
+                border: solid 1px #318cf7;
+                z-index: 1;
+                background: #ffffff;
+                .dialog-query-wifilist {
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  overflow: scroll;
+                  .dialog-wifi-unit {
+                    position: relative;
+                    width: 100%;
+                    height: 36px;
+                    .dialog-wifi-unit-name {
+                      position: relative;
+                      width: 100%;
+                      height: 100%;
+                      .div-icon-input-wifi {
+                        position: relative;
+                        width: 50px;
+                        height: 100%;
+                        .icon-input-wifi {
+                          position: relative;
+                          font-size: 10px;
+                          left: 6px;
+                          top: -4px;
+                        }
+                      }
+
+                      .dialog-wifi-unit-name-text {
+                        position: relative;
+                        top: -36px;
+                        left: 50px;
+                        width: 85%;
+                        height: 100%;
+                        font-size: 15px;
+                        padding: 10px;
+                        padding-left: -19px;
+                        color: #43535d;
+                        padding-left: 0px;
+                        padding-top: 4px;
+                        text-align: left;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .dialog-wifi-offline {
+                position: absolute;
+                top: 240px;
+                left: 285px;
+                width: 215px;
+                height: 46px;
+                border-radius: 4px;
+                background: #ffffff;
+                .offline-text {
+                  position: relative;
+                  top: 3px;
+                  font-size: 22px;
+                  color: #3391ff;
+                }
+              }
+
+              .dialog-ap-wifi-configing {
+                position: relative;
+                width: 150px;
+                height: 150px;
+                left: 41%;
+                top: 45px;
+                .icon-ap-wifi {
+                  position: relative;
+                }
+              }
+
+              .dialog-wifi-list-div {
+                position: relative;
+                width: 640px;
+                height: 180px;
+                top: 50px;
+                margin: 0 auto;
+                overflow: scroll;
+                .dialog-wifi-list {
+                  position: relative;
+                  width: 800px;
+                  height: 180px;
+                  z-index: 99;
+                  border-radius: 5px;
+                  overflow-x: scroll;
+                  margin: 0 auto;
+                  .dialog-wifi-unit {
+                    display: inline-block;
+                  
+                    height: 180px;
+                    width: 145px;
+                    font-size: 18px;
+                    margin: 3px;
+                    color: #78D7DD;
+                    float: left;
+                    margin-left: 50px;
+                    .dialog-wifi-unit-name {
+                      position: relative;
+                      .dialog-wifi-unit-name-icon {
+                        position: relative;
+                        width: 128px;
+                        height: auto;
+                      }
+
+                      .dialog-wifi-unit-name-icon-connecting {
+                        position: relative;
+                        top: -85px;
+                        left: 44px;
+                        width: 30px;
+                      }
+
+                      .dialog-wifi-unit-name-icon-suc {
+                        position: relative;
+                        top: -105px;
+                        left: -3px;
+                      }
+
+                      .dialog-wifi-unit-name-text {
+                        position: relative;
+                        top: -12px;
+                        font-size: 20px;
+                        left: 24%;
+                      }
+                    }
+                  }
+                }
+              }
+
+            }
+          }
+        }
+
+        .dialog-footer {
+          background: #3391ff;
+          width: 800px;
+          height: 72px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          .dialog-add-new-module {
+            text-align: center;
+            max-width: 250px;
+            height: 32px;
+            margin: 0 auto;
+            .centerY();
+            .icon-add-white {
+              .centerY();
+            }
+            .add-new-module-text {
+              font-size: 24px;
+            }
+          }
+
+          .dialog-apmode-wifi {
+            position: relative;
+            text-align: center;
+            top: 35%;
+            .apmode-wifi-text {
+              position: relative;
+              top: -7px;
+              font-size: 24px;
+              color: #a9c6e9;
+            }
+          }
+        }
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+@import '../../nodeColor';
+.node-actual.node-type-COUNTER {
+  color:#fff;
+  background: @node-counter;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  width: 96px;
+  height: 96px;
+  .node-body{
+    border: solid 1px @node-counter-borderColor;
+    width: 96px;
+    height: 96px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    .counter-title {
+      display: block;
+      height:17px;
+      text-align: center;
+      widows: inherit;
+      line-height: 17px;
+      font-size: 12px;
+    }
+    .counter-value{
+      height: 37px;
+      font-size: 26px;
+      display: block;
+      line-height: 44px;
+      font-weight: 600;
+    }
+    .counter-reset{
+      width: 80px;
+      height: 31px;
+      line-height: 30px;
+      display: inline-block;
+      text-align: center;  
+      border-radius: 6px;
+      background-color: #b995ff;
+      font-size: 14px;
+      color: #7e4edb;
+    }
+
+  }
+  .node-port-outputs{
+    margin-left: 10px;
+    .core {
+      background-color: @node-counter;
+    }
+    .show{
+      margin-left: 0;
+    }
+  }
+  .node-tools{
+    .tab-control{
+      right: -42px;
+      .tab-control-circle{
+        background-color: @node-counter;
+      }
+    }
+
+  }
+}
+

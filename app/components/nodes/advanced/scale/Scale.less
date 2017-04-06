@@ -1,0 +1,66 @@
+@import '../../nodeColor';
+
+.node-actual.node-type-SCALE {
+  color:#fff;
+  background: @node-scale;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  width: 96px;
+  height: 96px;
+  .node-body{
+    border: solid 1px @node-scale-borderColor;
+    width: 96px;
+    height: 96px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    .scale-title {
+      width: 25px;
+      height:17px;
+      text-align: center;
+      widows: inherit;
+      line-height: 17px;
+      font-size: 12px;
+      color: #ffffff;
+    }
+    .scale-in{
+      height: 20px;
+      font-size: 14px;
+      text-align: center;
+      display: block;
+      color: #ffffff;
+    }
+    .scale-arrow{
+      width: 13.9px;
+      height: 8.7px;
+      object-fit: contain;
+      border-radius: 1px;
+    }
+    .scale-out{
+      height: 20px;
+      font-size: 14px;
+      text-align: center;
+      display: block;
+      color: #ffffff;
+    }
+  }
+ .node-config {
+    font-size: 14px;
+  } 
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-scale;
+    }
+  }
+  .node-port-outputs{
+    margin-left: 10px;
+    .core {
+      background-color: @node-scale;
+    }
+    .show{
+      margin-left: 0;
+      text-overflow: ellipsis;
+      overflow: hidden;    
+    }
+  } 
+}
+

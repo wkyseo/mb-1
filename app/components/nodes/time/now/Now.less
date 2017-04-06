@@ -1,0 +1,31 @@
+@import '../../nodeColor';
+
+.node-actual.node-type-NOW {
+  background: @node-now;
+  .node-body{
+    border: solid 1px @node-now-borderColor;
+    .now {
+      height: 24px;
+      font-size: 19.5px;
+      text-align: center;
+      color: #ffffff;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: #f98432;
+    }
+  }
+  .node-port-outputs{
+    margin-left: 10px;
+    .core {
+      background-color: #f98432;
+    }
+    .show{
+      margin-left: 0; 
+    }
+  }    
+}
+

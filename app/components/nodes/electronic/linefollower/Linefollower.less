@@ -1,0 +1,20 @@
+@import '../../nodeColor';
+.node-actual.node-type-LINEFOLLOWER {
+  .node-body{
+    border: 3px solid @node-lineFollow;
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-lineFollow;
+    }
+  }
+  .node-port-outputs{
+    margin-left: 10px;
+    .core{
+      background-color: @node-lineFollow;
+    }
+    &.show{
+      margin-left: 0;
+    }
+  }
+}

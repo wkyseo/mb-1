@@ -1,0 +1,21 @@
+@import '../../nodeColor';
+
+.node-actual.node-type-LEDPANEL {
+  .node-body{
+    border: 3px solid @node-ledpanel;
+    height: 141px;
+    width: 141px;
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-ledpanel;
+    }
+  }
+  .node-config {
+    width: 200px;
+    height: 152px;
+    .title {
+      display: none;
+    }
+  }  
+}

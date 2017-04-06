@@ -1,0 +1,44 @@
+@import '../../nodeColor';
+
+.node-actual.node-type-DELAY {
+  color:#fff;
+  background: @node-delay;
+  .node-body{
+    border: solid 1px @node-delay-borderColor;
+    .delay-title {
+      display: block;
+      height:17px;
+      text-align: center;
+      widows: inherit;
+      line-height: 17px;
+      font-size: 12px;
+    }
+    .delay-value{
+      height: 33px;
+      font-size: 26px;
+      display: block;
+      line-height: 40px;
+      font-weight: 500;
+    }
+
+  }
+  .node-port-outputs{
+    margin-left: 10px;
+    .core {
+      background-color: @node-delay;
+    }
+    .show{
+      margin-left: 0;
+    }
+  }
+  .node-tools{
+    .tab-control{
+      right: -42px;
+      .tab-control-circle{
+        background-color: @node-delay;
+      }
+    }
+
+  }
+}
+

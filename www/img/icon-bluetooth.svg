@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="35px" viewBox="0 0 34 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>bluetooth_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="神经元IDE_操作台-V1.1" transform="translate(-470.000000, -8989.000000)" fill="#428AFF">
+            <g id="4.操作台" transform="translate(96.000000, 8716.000000)">
+                <g id="工具箱_连接蓝牙效果" transform="translate(352.000000, 252.000000)">
+                    <g id="工具箱icons" transform="translate(20.000000, 21.000000)">
+                        <path d="M19,34.8363611 C28.3888407,34.8363611 36,27.2252019 36,17.8363611 C36,8.4475204 28.3888407,0.836361143 19,0.836361143 C9.61115925,0.836361143 2,8.4475204 2,17.8363611 C2,27.2252019 9.61115925,34.8363611 19,34.8363611 Z M19.1414905,7.83636114 L19.1414905,15.333979 L14.434038,10.7957524 L13,12.1763085 L18.7330814,17.701492 L13,23.2251959 L14.434038,24.6072316 L19.1414905,20.0675254 L19.1414905,27.5651432 L20.165584,27.5651432 L26,21.9437795 L21.5980867,17.701492 L26,13.4592046 L20.165584,7.83636114 L19.1414905,7.83636114 Z M21,11.5637207 L23.0715332,13.3363611 L21,15.3649902 L21,11.5637207 Z M21,20.5588379 L23.0715332,22.3363611 L21,24.2893066 L21,20.5588379 Z" id="bluetooth_icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

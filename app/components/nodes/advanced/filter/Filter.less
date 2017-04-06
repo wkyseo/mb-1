@@ -1,0 +1,83 @@
+@import '../../nodeColor';
+.node-preview.node-type-FILTER {
+  .node-preview-icon{
+    background-color: #f5bc00;
+    border: solid 1px #cd9421;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 100%;
+    line-height: 64px;   
+  }  
+}
+
+.node-actual.node-type-FILTER {
+  .node-body{
+    background-color: #f5bc00;
+    border: solid 1px #cd9421;
+    .to{
+      width: 30px;
+      height: 38px;
+      display: block;
+      background-color: #ffffff;
+      text-align: center;
+      color: #cd9421;
+      font-size: 20px;
+      font-weight: 500;
+      font-family: dinpro;
+      position: relative;
+      top: -5px;
+      border-top-left-radius: 50% 10%;
+      border-top-right-radius: 50% 10%;
+      margin: 0 auto;
+      line-height: 47px;
+    }
+    .arrow {
+      width: 75px;
+      height: 32px;
+      object-fit: contain;
+      opacity: 0.96;
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    } 
+    .from{
+      width: 30px;
+      height: 38px;
+      background-color: #ffffff;
+      text-align: center;
+      color: #cd9421;
+      font-family: dinpro;
+      font-size: 20px;
+      font-weight: 500;
+      position: relative;
+      z-index: 2;
+      top: 5px;
+      border-bottom-left-radius: 50% 10%;
+      border-bottom-right-radius: 50% 10%;
+      display: block;
+      margin: 0 auto;
+      line-height: 29px;
+    }
+  }
+ .node-config {
+    font-size: 14px;
+  } 
+  .node-tools{
+    .tab-control-circle{
+      background-color: #f5bc00;
+    }
+  }
+  .node-port-outputs{
+    margin-left: 10px;
+    .core {
+      background-color: #f5bc00;
+    }
+    .show{
+      margin-left: 0;
+    }
+  } 
+}
+

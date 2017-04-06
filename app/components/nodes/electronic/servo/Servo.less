@@ -1,0 +1,23 @@
+@import '../../nodeColor';
+.node-preview.node-type-SERVO {
+  width: 95px !important;
+  height: 57px !important;
+  .node-preview-icon{
+    width: 95px !important;
+    height: 57px !important;
+  }
+}
+
+.node-actual.node-type-SERVO {
+  .node-body{
+    border: 3px solid @node-servo;
+    height: 93px;
+    width: 165px;
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-servo;
+    }
+  }
+}
+

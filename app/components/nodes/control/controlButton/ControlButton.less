@@ -1,0 +1,41 @@
+@import '../../nodeColor';
+@import '../../nodeShape';
+
+.node-preview.node-type-CONTROLBUTTON {
+
+}
+
+.node-actual.node-type-CONTROLBUTTON {
+  .node-body {
+    width: 96px;
+    height: 96px;
+    border-radius: 8px;
+	  background-color: @node-control;
+	  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+	  border: solid 1px #3a65ab;
+    position: relative;
+    .editer-gear{
+      display: block;
+      width: 20px;
+      height: 20px;
+      float: right;
+    }
+    .node-actual-icon {
+      height: 58px;
+      width: 58px;
+      position: absolute;
+      .center();
+    }
+  }
+  .node-port-outputs{
+    .core{
+      background-color: @node-control;
+      .round();
+    }
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-control;
+    }
+  }
+}

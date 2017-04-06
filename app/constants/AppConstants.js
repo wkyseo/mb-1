@@ -1,0 +1,72 @@
+import keyMirror from 'keymirror';
+
+export default keyMirror({
+  
+  LINK_AUTO_CONNECT_DIALOG_OPEN: null,
+  LINK_DIALOG_OPEN: null,
+  REFRESH_BLUETOOTH: null,
+  LINK_DIALOG_CONNECT: null,
+  LINK_DIALOG_DISCONNECT: null,
+  LINK_DIALOG_CLOSE: null,
+
+  EDITER_NODE_ADD: null,
+  EDITER_NODE_MOVE: null,
+  EDITER_NODE_REMOVE: null,
+  EDITER_WIRE_ADD: null,
+  EDITER_SINGLE_WIRE_REMOVE: null,
+  EDITER_NODE_CONFIG: null,
+  EDITER_NODE_USE: null,
+  EDITER_NODE_UNUSE: null,
+
+  NUMBER_INPUT_DIALOG_OPEN: null,
+
+  GLOBAL_CANVAS_TOUCH: null,
+  NODE_TAP: null,
+  LONGPRESS_NODE: null,
+  BEGIN_MOVING_NODE: null,
+  MOVING_NODE: null,
+  IMAGE_SETTING_DIALOG: null,
+
+  PROJECT_CREATE: null,
+  PROJECT_SAVE: null,
+  PROJECT_OPEN: null,
+  PROJECT_CLOUD_OPEN: null,
+  PROJECT_DELETE: null,
+  PROJECT_SAVE_NAME: null,
+  PATTERN_SETTING_DIALOG: null,
+
+  SHELF_SHOW_DELETE: null,
+  PALETTE_SHOW_DELETE: null,
+  EDIT_CLOUD_NODE_NAME: null,
+  EDIT_CLOUD_TEXT_INPUT: null,
+  GET_CLOUD_TEXT_INPUT: null,
+
+  WIFI_DIALOG_OPEN: null,
+  RECONNECT_SERVICE_WIFI: null,
+  SEARCH_WIFI_MODULE: null,                                                                                                                                    
+  CONNECT_CHOSEN_WIFI: null,
+  STOP_SEARCH_WIFI_MODULE: null,
+  OPEN_DISCONN_DIALOG: null,
+  DISCONN_WIFI: null,
+  UPLOAD_WIFI_CONFIG: null,
+  QUERY_AP_CONNECTED_WIFI: null,
+  QUERY_AP_WIFILIST: null,
+
+  
+  EDIT_TEXT_INPUT: null,
+  GET_TEXT_INPUT: null,
+
+  CONFIRM_UPLOAD_CODE: null,
+  CANCEL_UPLOAD: null,
+  SHARE_CLOUD_PROJECT: null,
+  UPDATE_CLOUD_PROJECT: null,
+  CHANGE_WIFI_TYPE: null,
+  QUERY_STA_CONNECTED_WIFI: null,
+
+  SHOW_MUSIC_BOARD: null,
+  MUSIC_METER_CHANGE: null,
+  MUSIC_KEY_VALUE_CHANGE: null,
+  MUSIC_SYNC_CONFIGURATOR: null,
+  SOUND_LIST_LOAD_FINISHED: null
+
+});

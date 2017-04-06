@@ -1,0 +1,36 @@
+@import '../../nodeColor';
+
+.node-actual.node-type-TODAY {
+  background: @node-today;
+  .node-body{
+    border: solid 1px @node-today-borderColor;
+    .date {
+      height: 24px;
+      font-size: 15.2px;
+      text-align: center;
+      color: #ffffff;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .week {
+      font-size: 19.5px;
+      font-weight: 600;
+    }
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: #f98432;
+    }
+  }
+  .node-port-outputs{
+    margin-left: 10px;
+    .core {
+      background-color: #f98432;
+    }
+    .show{
+      margin-left: 0;
+    }
+  }    
+}
+

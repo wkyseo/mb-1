@@ -1,0 +1,21 @@
+@import '../../../nodeColor';
+.node-actual.node-type-TEXT {
+  .node-body {
+    background: @node-text;
+    border: 2px solid @node-text-borderColor;
+    .text-icon{
+      width: 31px;
+      height: 21px;
+      margin: 0 auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); 
+    }    
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-text;
+    }
+  }
+
+}

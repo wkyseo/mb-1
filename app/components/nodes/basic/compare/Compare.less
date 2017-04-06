@@ -1,0 +1,48 @@
+@import '../../nodeColor';
+.node-actual.node-type-COMPARE {
+  background: @node-compare;
+  .node-body{
+    border: solid 1px @node-compare-borderColor;
+    .node-actual-body{
+      font-size: 24px;
+      width: 70px;
+      height: 40px;
+      display: inline-block;
+      vertical-align: middle;
+      .node-actual-icon{
+        display: inline-block;
+        width: 20px;
+        height: auto;
+        vertical-align: middle;
+      }
+      .node-actual-value{
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: 600;
+        display: inline-block;
+        width: 46px;
+        text-align: center;
+        margin-left: 4px;
+      }
+    }
+  }
+  .node-port-outputs{
+    .core{
+      background-color: @node-compare;
+      &.show{
+        width: 16px;
+        height: 16px;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+      }
+    }
+  }
+  .node-config {
+    font-size: 14px;
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-compare;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../nodeColor';
+.node-preview.node-type-NOT {
+
+}
+
+.node-actual.node-type-NOT {
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-not;
+    }
+  }
+  .node-port-outputs{
+    .core{
+      background-color: @node-not;
+      &.show{
+        width: 16px;
+        height: 16px;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+

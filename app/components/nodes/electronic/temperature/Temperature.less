@@ -1,0 +1,21 @@
+@import '../../nodeColor';
+.node-actual.node-type-TEMPERATURE {
+  .node-body{
+    border: 3px solid @node-temperature;
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-temperature;
+    }
+  }
+
+  .node-port-outputs{
+    margin-left: 10px;
+    .core{
+      background-color: @node-temperature;
+    }
+    &.show{
+      margin-left: 0;
+    }
+  }  
+}

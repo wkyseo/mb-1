@@ -1,0 +1,46 @@
+@import '../../nodeColor';
+.node-actual.node-type-COMPUTE {
+  background: @node-compute;
+  .node-body{
+    border: solid 1px @node-compute-borderColor;
+    .node-actual-body{
+      font-size: 24px;
+      width: 70px;
+      height: 40px;
+      display: inline-block;
+      vertical-align: middle;
+      .node-actual-icon{
+        display: inline-block;
+        width: 20px;
+        height: auto;
+        vertical-align: middle;
+      }
+      .node-actual-value{
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: 600;
+        display: inline-block;
+        width: 46px;
+        text-align: center;
+        margin-left: 4px;
+      }
+    }
+  }
+  .node-port-outputs{
+    margin-left: 10px;
+    .core{
+      background-color: @node-compute;
+    }
+    &.show{
+      margin-left: 0;
+    }
+  }
+  .node-config {
+    font-size: 14px;
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-compute;
+    }
+  }
+}

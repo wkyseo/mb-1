@@ -1,0 +1,37 @@
+@import '../../nodeColor';
+.node-actual.node-type-TIMER {
+  background: @node-timer;
+  .node-body{
+    border: solid 1px @node-timer-borderColor;
+    .node-actual-interval {
+      height: 24px;
+      font-size: 15.2px;
+      text-align: center;
+      color: #ffffff;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .node-actual-time {
+      font-size: 19.5px;
+      font-weight: 600;
+    }
+  }
+  .node-port-outputs{
+    .core{
+      background-color: @node-timer;
+      &.show{
+        width: 16px;
+        height: 16px;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+      }
+    }
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-timer;
+    }
+  }
+}
+

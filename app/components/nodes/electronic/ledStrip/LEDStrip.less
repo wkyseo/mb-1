@@ -1,0 +1,19 @@
+@import '../../nodeColor';
+
+.node-actual.node-type-LEDSTRIP {
+  .node-body{
+    border: 3px solid @node-ledstrip;
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-ledstrip;
+    }
+  }
+  .node-config {
+    width: 200px;
+    height: 152px;
+    .title {
+      display: none;
+    }
+  }    
+}

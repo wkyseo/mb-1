@@ -1,0 +1,24 @@
+@import '../../nodeColor';
+@import '../../nodeShape';
+
+.node-actual.node-type-RECORD {
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-sound-record;
+    }
+  }
+  .node-port-outputs{
+    .core{
+      background-color:  @node-sound-record;
+      &.show{
+        width: 16px;
+        height: 16px;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+      }
+    }
+  }
+  .node-port-input .core {
+    border-color: @node-sound-record;
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../nodeColor';
+@import '../../nodeShape';
+
+.node-actual.node-type-ACCELEROMETER_GYRO {
+  .node-body{
+    border: 3px solid @node-gyroSensor;
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-gyroSensor;
+    }
+  }
+  .node-port-outputs{
+    margin-left: 10px;
+    .core{
+      background-color: @node-gyroSensor;
+    }
+    .show{
+      margin-left: 0;
+      width: 60px;
+      .node-port-label {
+        float: left;
+        margin-left: 2px;
+      }
+    }
+    .round {
+      .round() !important;
+    }
+  }  
+}

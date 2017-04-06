@@ -1,0 +1,31 @@
+@import '../../nodeColor';
+.node-preview.node-type-ULTRASONIC {
+  width: 95px !important;
+  height: 57px !important;
+  .node-preview-icon{
+    width: 95px !important;
+    height: 57px !important;
+  }
+}
+
+.node-actual.node-type-ULTRASONIC {
+  .node-body{
+    border: 3px solid @node-ultrasonic;
+    height: 99px;
+    width: 165px;
+  }
+  .node-tools{
+    .tab-control-circle{
+      background-color: @node-ultrasonic;
+    }
+  }
+  .node-port-outputs{
+    margin-left: 10px;
+    .core{
+      background-color: @node-ultrasonic;
+    }
+    &.show{
+      margin-left: 0;
+    }
+  }
+}
